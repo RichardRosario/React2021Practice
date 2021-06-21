@@ -1,3 +1,4 @@
+// list to do with map array function
 const textAreaStyles = {
 	width: 235,
 	margin: 5
@@ -6,12 +7,12 @@ const textAreaStyles = {
 class MyToDoList extends React.Component {
 	constructor(props) {
 		super(props);
-		// Change code below this line
+		// initial state
 		this.state = {
 			userInput: "",
 			toDoList: []
 		};
-		// Change code above this line
+		// bind the event handlers to this
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
 	}
