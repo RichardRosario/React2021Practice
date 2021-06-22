@@ -11,8 +11,10 @@ const todos = [
 const immutableReducer = (state = todos, action) => {
 	switch (action.type) {
 		case ADD_TO_DO:
-			// Don't mutate state here or the tests will fail
-			return [...todos, action.todo];
+			// using concat to make a copy of state
+			return state.concat(action.todo);
+		// using spread operator to make a shallow copy of state use only in one-dimensional array
+		// return [...todos, action.todo];
 
 		default:
 			return state;
