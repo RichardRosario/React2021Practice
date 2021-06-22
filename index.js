@@ -192,4 +192,4 @@ class RenderInput extends React.Component {
 	}
 }
 
-ReactDOM.render(<JSXDemo />, document.getElementById("root"));
+// ReactDOM.render(<JSXDemo />, document.getElementById("root"));
